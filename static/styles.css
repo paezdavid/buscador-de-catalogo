@@ -1,0 +1,36 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body { background-color: yellow; }
+
+.wrapper {
+    padding: 1.2rem;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+section {
+    padding: 1rem;
+}
+
+/* .recordMainInfo {
+    width: 70%;
+} */
+
+h2 { font-size: 1.7rem; }
+.subtitulo { margin-bottom: 1rem; }
+.autorP { margin-top: 1rem; }
+p { font-size: 1.25rem; margin-bottom: 1rem; }
+
+li {
+    list-style: none;
+    margin-bottom: 0.5rem;
+}
+
