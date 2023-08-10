@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>info</title>
+    <link rel="stylesheet" href="../static/styles.css">
+</head>
+<body>
+
+    <div class="wrapper">
+        <main>
+        
+            <section class="recordMainInfo">
+                <span>{{ registro_data[15] }}</span>
+                <h2>{{ registro_data[1] }}</h2>
+                {% if registro_data[2] != "" %}
+                    <p class="subtitulo"><i>{{registro_data[2]}}</i></p>
+                {% endif %}
+                <p class="autorP">{{ registro_data[3] }}</p> 
+                <p>{{ registro_data[27] }}</p>
+                <p>{{ registro_data[8] }}</p>
+            </section>
+
+
+            <section class="recordDetails">
+                <!-- <li>Título: {{ registro_data[1] }}</li>
+                <li>Subtitulo: {{registro_data[2]}}</li>
+                <li>Autor Personal: {{ registro_data[3] }}</li> -->
+                <li>Autor Institucional: {{ registro_data[4] }}</li>
+                <li>Mencion de Responsabilidad: {{ registro_data[5] }}</li>
+                <li>Temas: {{ registro_data[6] }}</li>
+                <li>Editorial: {{ registro_data[7] }}</li>
+                <!-- <li>Año de Publicacion: {{ registro_data[8] }}</li> -->
+                <li>ISBN: {{ registro_data[9] }}</li>
+                <li>Volumen: {{ registro_data[10] }}</li>
+                <li>Procedencia: {{ registro_data[11] }}</li>
+                <li>Sintesis: {{ registro_data[12] }}</li>
+                <li>Medio Fisico: {{ registro_data[13] }}</li>
+                <li>Titulo del Congreso: {{ registro_data[14] }}</li>
+                <!-- <li>Tipo de Material: {{ registro_data[15] }}</li> -->
+                <li>Forma de Adquisicion: {{ registro_data[16] }}</li>
+                <li>Fecha de Carga del Registro: {{ registro_data[17] }}</li>
+                <li>Derechos de Autor: {{ registro_data[18] }}</li>
+                <li>Edicion: {{ registro_data[19] }}</li>
+                <li>Pagina Web: {{ registro_data[20] }}</li>
+                <li>Disponible en Linea: {{ registro_data[21] }}</li>
+                <li>Email del Autor: {{ registro_data[22] }}</li>
+                <li>Identificador: {{ registro_data[23] }}</li>
+                <li>Signatura Topografica: {{ registro_data[24] }}</li>
+                <li>Codigo de autor o cutter: {{ registro_data[25] }}</li>
+                <li>Numero de Ejemplares: {{ registro_data[26] }}</li>
+                <!-- <li>Institucion: {{ registro_data[27] }}</li> -->
+            </section>
+        
+        </main>
+    </div>
+
+    <!-- {% for columna in registro_data %}
+        <li>{{ columna }}</li>
+
+    {% endfor %} -->
+
+</body>
+</html>
