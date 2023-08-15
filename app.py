@@ -58,6 +58,4 @@ def suggest():
     conn.commit() # Se committean los cambios a la DB
     conn.close()
 
-    print(suggestions)
-
     return suggestions
