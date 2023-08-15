@@ -5,8 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>info</title>
     <link rel="stylesheet" href="../static/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@300;400;700&family=Oxygen&display=swap" rel="stylesheet">  
 </head>
 <body>
+
+    <nav>
+        <a href="/">Volver al inicio</a>
+    </nav>
 
     <div class="wrapper">
         <main>
@@ -22,35 +29,40 @@
                 <p>{{ registro_data[8] }}</p>
             </section>
 
+            
 
             <section class="recordDetails">
-                <!-- <li>Título: {{ registro_data[1] }}</li>
-                <li>Subtitulo: {{registro_data[2]}}</li>
-                <li>Autor Personal: {{ registro_data[3] }}</li> -->
-                <li>Autor Institucional: {{ registro_data[4] }}</li>
-                <li>Mencion de Responsabilidad: {{ registro_data[5] }}</li>
-                <li>Temas: {{ registro_data[6] }}</li>
-                <li>Editorial: {{ registro_data[7] }}</li>
-                <!-- <li>Año de Publicacion: {{ registro_data[8] }}</li> -->
-                <li>ISBN: {{ registro_data[9] }}</li>
-                <li>Volumen: {{ registro_data[10] }}</li>
-                <li>Procedencia: {{ registro_data[11] }}</li>
-                <li>Sintesis: {{ registro_data[12] }}</li>
-                <li>Medio Fisico: {{ registro_data[13] }}</li>
-                <li>Titulo del Congreso: {{ registro_data[14] }}</li>
-                <!-- <li>Tipo de Material: {{ registro_data[15] }}</li> -->
-                <li>Forma de Adquisicion: {{ registro_data[16] }}</li>
-                <li>Fecha de Carga del Registro: {{ registro_data[17] }}</li>
-                <li>Derechos de Autor: {{ registro_data[18] }}</li>
-                <li>Edicion: {{ registro_data[19] }}</li>
-                <li>Pagina Web: {{ registro_data[20] }}</li>
-                <li>Disponible en Linea: {{ registro_data[21] }}</li>
-                <li>Email del Autor: {{ registro_data[22] }}</li>
-                <li>Identificador: {{ registro_data[23] }}</li>
-                <li>Signatura Topografica: {{ registro_data[24] }}</li>
-                <li>Codigo de autor o cutter: {{ registro_data[25] }}</li>
-                <li>Numero de Ejemplares: {{ registro_data[26] }}</li>
-                <!-- <li>Institucion: {{ registro_data[27] }}</li> -->
+                <h2 class="detallesH2">Detalles del artículo</h2>
+                
+                <!-- {% if registro != ""  %}
+                    <li> {{ registro }}</li>
+                    
+                {% endif %} -->
+
+                
+                {% if registro_data[4] != "" %} <li><b>Autor Institucional:</b> {{ registro_data[4] }}</li> {% endif %}
+                {% if registro_data[5] != "" %} <li><b>Mención de Responsabilidad:</b> {{ registro_data[5] }}</li> {% endif %}
+                {% if registro_data[6] != "" %} <li><b>Temas:</b> {{ registro_data[6] }}</li> {% endif %}
+                {% if registro_data[7] != "" %} <li><b>Editorial:</b> {{ registro_data[7] }}</li> {% endif %}
+                {% if registro_data[9] != "" %} <li><b>ISBN:</b> {{ registro_data[9] }}</li> {% endif %}
+                {% if registro_data[10] != "" %} <li><b>Volumen:</b> {{ registro_data[10] }}</li> {% endif %}
+                {% if registro_data[11] != "" %} <li><b>Procedencia:</b> {{ registro_data[11] }}</li> {% endif %}
+                {% if registro_data[12] != "" %} <li><b>Síntesis:</b> {{ registro_data[12] }}</li> {% endif %}
+                {% if registro_data[13] != "" %} <li><b>Medio físico:</b> {{ registro_data[13] }}</li> {% endif %}
+                {% if registro_data[14] != "" %} <li><b>Título del congreso:</b> {{ registro_data[14] }}</li> {% endif %}
+                {% if registro_data[16] != "" %} <li><b>Forma de adquisición:</b> {{ registro_data[16] }}</li> {% endif %}
+                {% if registro_data[17] != "" %} <li><b>Fecha de carga del registro:</b> {{ registro_data[17] }}</li> {% endif %}
+                {% if registro_data[18] != "" %} <li><b>Derechos de autor:</b> {{ registro_data[18] }}</li> {% endif %}
+                {% if registro_data[19] != "" %} <li><b>Edición:</b> {{ registro_data[19] }}</li> {% endif %}
+                {% if registro_data[20] != "" %} <li><b>Página web:</b> {{ registro_data[20] }}</li> {% endif %}
+                {% if registro_data[21] != "" %} <li><b>Disponible en línea:</b> {{ registro_data[21] }}</li> {% endif %}
+                {% if registro_data[22] != "" %} <li><b>Email del autor:</b> {{ registro_data[22] }}</li> {% endif %}
+
+                {% if registro_data[23] != "" %} <li><b>Identificador:</b> {{ registro_data[23] }}</li> {% endif %}
+                {% if registro_data[24] != "" %} <li><b>Signatura topográfica:</b> {{ registro_data[24] }}</li> {% endif %}
+                {% if registro_data[25] != "" %} <li><b>Código de autor o cutter:</b> {{ registro_data[25] }}</li> {% endif %}
+                {% if registro_data[26] != "" %} <li><b>Número de ejemplares:</b> {{ registro_data[26] }}</li> {% endif %}
+
             </section>
         
         </main>
