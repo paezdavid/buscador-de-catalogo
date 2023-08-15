@@ -4,17 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CNC</title>
+    <link rel="stylesheet" href="../static/indexStyles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@300;400;700&family=Oxygen&display=swap" rel="stylesheet"> 
+    <script src="https://cdn.tailwindcss.com"></script>      
 </head>
 <body>
-    <h1>catalogo</h1>
+    <div class="wrapper">
+        <h1 class="text-3xl mb-4 font-bold text-center">Catálogo de Bibliotecas para el Estudiante</h1>
+        <section class="mb-4">
+            <p class="text-lg">Explora el catálogo virtual de las bibliotecas y encuentra tesis, monografías, artículos y mucho más de todos los departamentos de la universidad.</p>
+        </section>
+        <form action="/search" method="post" class="w-full max-w-2xl">
+            <div class="mt-2 searchbarSection">
+                <input type="text" name="search" id="searchInput" class="block w-full p-4 rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" placeholder="Buscar artículos, monografías, tesis...">
+                <ul id="suggestionsList" class="max-w-2xl;"></ul>
+                
+            </div>
+        
+        </form>
+    </div>
 
-    <h2></h2>
 
-    <form action="/search" method="post">
-        <input type="text" id="searchInput" placeholder="Busca un paper...">
-        <ul id="suggestionsList" style="width: 600px;"></ul>
-        <input type="submit" value="Submit">
-    </form>
+    
 
     <script src="../static/main.js"></script>
 </body>
