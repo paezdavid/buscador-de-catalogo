@@ -27,3 +27,8 @@ py -3 -m venv .venv
 pip install -r requirements.txt
 flask run
 ```
+
+## UI
+![buscador](https://github.com/paezdavid/buscador-de-catalogo/assets/69438782/a70da938-1212-4250-9fee-f48809345bac)
+![detalles](https://github.com/paezdavid/buscador-de-catalogo/assets/69438782/1007fa70-f291-4bb4-b989-c5c16a9dabbb)
+
