@@ -43,7 +43,7 @@ def suggest():
     conn = sqlite3.connect("catalogo_07_08_2023.db")
     cursor = conn.cursor()
 
-    cursor.execute(f"SELECT id, titulo FROM catalogo_03_08_2023 WHERE titulo LIKE '{lowercase_input}%' LIMIT 10")
+    cursor.execute(f"SELECT id, titulo FROM catalogo_03_08_2023 WHERE titulo LIKE '%{lowercase_input}%' LIMIT 10")
     
     results = cursor.fetchall()
     suggestions = []
